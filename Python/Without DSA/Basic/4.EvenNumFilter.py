@@ -1,0 +1,5 @@
+number_list = [1, 2, 3, 4, 5, 6]
+
+evens = list(filter(lambda x: x % 2 == 0, number_list))
+
+print(evens)
