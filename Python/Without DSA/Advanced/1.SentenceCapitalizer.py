@@ -1,4 +1,4 @@
-sentence = "build my own jarvis"
+sentence = "build my own program"
 
 new_sentence = ""
 

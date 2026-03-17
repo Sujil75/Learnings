@@ -1,4 +1,4 @@
-string = "I want to build JARVIS"
+string = "I want to build Programs"
 
 count = len(string.split())
 
