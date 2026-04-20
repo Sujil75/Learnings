@@ -1,0 +1,33 @@
+.trasition-class {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    border: 6px solid #c3142b90;
+    background-color: #ea7f8d90;
+    color: #c3142b90;
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    /*Transition Properties*/
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; linear, ease-in-out
+    transition-delay: 0s; */
+
+    /* Transition shorthand property, here ease and 0s delay is default so not required to add them */
+    /* transition: transform 0.5s, background-color 0.3s; here some problems may occur for comma seperated thus "all" can be used */
+    transition: all 0.8s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+    background-color: #c3142b90;
+    color: #ffffff;
+}

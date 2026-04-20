@@ -1,2 +1,3 @@
 .venv/
 spacy_env/
+.vscode/
