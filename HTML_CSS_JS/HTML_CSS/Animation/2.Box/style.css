@@ -1,0 +1,54 @@
+/* * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+/* Keyframe values are iterable */
+@keyframes colorChange {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: pink;
+        left: 300px;
+        top: 0;
+    }
+
+    50% {
+        background-color: yellow;
+        left: 300px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: blue;
+        left: 0;
+        top: 300px;
+    }
+
+    100% {
+        background-color: green;
+        left: 0;
+        top: 0;
+    }
+}
+
+.main {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    /* animation: colorChange 5s 3s 3 infinite ease-in; */
+    
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /* 3 */
+    animation-timing-function: linear;
+}
