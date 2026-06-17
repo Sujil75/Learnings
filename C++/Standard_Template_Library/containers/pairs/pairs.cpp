@@ -1,8 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void pairArray() {
+    pair<int, int> pairArr[] = {{1, 2}, {3, 4}, {5, 6}};
+    
+    cout << "Pair array method: pair<int, int> pairArr[] = {{1, 2}, {3, 4}, {5, 6}};" << endl; 
+    for (int i=0; i < size(pairArr); i++) {
+        cout << "Pair " << i + 1 << ": (" << pairArr[i].first << ", " << pairArr[i].second << ')' << endl;
+    };
+};
+
 void pairSyntax() {
-    cout << "pair<int, char> p = {1, 'a'}" << endl;
+    cout << "Syntax: pair<int, char> p = {1, 'a'}" << endl;
 };
 
 void checkAndProvideChoiceFunction(int c) {
@@ -11,6 +20,10 @@ void checkAndProvideChoiceFunction(int c) {
            pairSyntax();
            cout << endl;
            break;
+        case 2:
+            pairArray();
+            cout << endl;
+            break;
         default:
             cout << "Provide a valid input" << endl;
             break;
@@ -36,7 +49,7 @@ int main() {
     cout << "Introduction to Pairs" << endl;
 
     cout << "Which option you need: " << endl;
-    string options[] = {"Syntax"};
+    string options[] = {"Syntax", "Pair Array"};
     optionsFunction(options, size(options));
     
     int choice;
